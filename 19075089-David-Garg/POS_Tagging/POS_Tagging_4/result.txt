@@ -1,0 +1,53 @@
+#Result -------------------------
+Accuracy                 :  93.37231145914684
+Correctly tagged words   :  44237
+Incorrectly tagged words :  3140
+Total words              :  47377
+Total sentences          :  2012
+
+processed 47377 tokens with 47377 phrases; found: 47377 phrases; correct: 44237.
+accuracy:  93.37%; precision:  93.37%; recall:  93.37%; FB1:  93.37
+                #: precision:  91.67%; recall: 100.00%; FB1:  95.65  12
+                $: precision: 100.00%; recall: 100.00%; FB1: 100.00  384
+               '': precision: 100.00%; recall:  99.37%; FB1:  99.68  314
+                (: precision: 100.00%; recall:  97.40%; FB1:  98.68  75
+                ): precision: 100.00%; recall: 100.00%; FB1: 100.00  77
+                ,: precision: 100.00%; recall: 100.00%; FB1: 100.00  2390
+                .: precision:  99.95%; recall:  99.95%; FB1:  99.95  1975
+                :: precision: 100.00%; recall: 100.00%; FB1: 100.00  238
+               CC: precision: 100.00%; recall:  99.26%; FB1:  99.63  1205
+               CD: precision:  98.03%; recall:  93.38%; FB1:  95.65  1827
+               DT: precision:  99.82%; recall:  99.20%; FB1:  99.51  3995
+               EX: precision:  97.96%; recall: 100.00%; FB1:  98.97  49
+               FW: precision: 100.00%; recall:  50.00%; FB1:  66.67  2
+               IN: precision:  98.36%; recall:  99.29%; FB1:  98.82  5119
+               JJ: precision:  85.34%; recall:  86.61%; FB1:  85.97  3008
+              JJR: precision:  88.27%; recall:  78.22%; FB1:  82.94  179
+              JJS: precision: 100.00%; recall:  80.52%; FB1:  89.21  62
+               MD: precision:  99.78%; recall:  98.51%; FB1:  99.14  464
+               NN: precision:  85.42%; recall:  93.87%; FB1:  89.45  7299
+              NNP: precision:  89.71%; recall:  90.74%; FB1:  90.22  4861
+             NNPS: precision:  90.57%; recall:  36.92%; FB1:  52.46  53
+              NNS: precision:  90.87%; recall:  86.32%; FB1:  88.54  2882
+              PDT: precision: 100.00%; recall:  40.00%; FB1:  57.14  4
+              POS: precision:  98.41%; recall: 100.00%; FB1:  99.20  441
+              PRP: precision: 100.00%; recall:  99.02%; FB1:  99.51  806
+             PRP$: precision: 100.00%; recall: 100.00%; FB1: 100.00  421
+               RB: precision:  95.64%; recall:  85.89%; FB1:  90.51  1216
+              RBR: precision:  72.06%; recall:  69.01%; FB1:  70.50  68
+              RBS: precision: 100.00%; recall:  97.96%; FB1:  98.97  48
+               RP: precision:  44.44%; recall:  33.33%; FB1:  38.10  9
+               TO: precision: 100.00%; recall: 100.00%; FB1: 100.00  1178
+               UH: precision: 100.00%; recall:  50.00%; FB1:  66.67  1
+               VB: precision:  87.47%; recall:  92.43%; FB1:  89.89  1341
+              VBD: precision:  91.93%; recall:  90.89%; FB1:  91.40  1660
+              VBG: precision:  88.93%; recall:  75.00%; FB1:  81.37  614
+              VBN: precision:  85.36%; recall:  81.34%; FB1:  83.30  1052
+              VBP: precision:  91.88%; recall:  81.82%; FB1:  86.56  480
+              VBZ: precision:  93.65%; recall:  87.19%; FB1:  90.30  850
+              WDT: precision:  92.89%; recall:  90.59%; FB1:  91.73  197
+               WP: precision: 100.00%; recall:  94.55%; FB1:  97.20  104
+              WP$: precision: 100.00%; recall: 100.00%; FB1: 100.00  4
+              WRB: precision: 100.00%; recall:  96.77%; FB1:  98.36  90
+               ``: precision: 100.00%; recall: 100.00%; FB1: 100.00  323
+

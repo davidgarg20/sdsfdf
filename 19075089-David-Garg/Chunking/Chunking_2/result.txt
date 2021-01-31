@@ -1,0 +1,35 @@
+#Result -------------------------
+Accuracy                 :  93.96753699052283 %
+Correctly tagged words   :  44519
+Incorrectly tagged words :  2858
+Total words              :  47377
+Total sentences          :  2012
+
+
+
+
+### Used conlleval script to evaluate the follwing result:
+
+Processed 47377 tokens with 41197 phrases; 
+Found     : 41153 phrases;
+Correct   : 38611;
+accuracy:  93.97%; precision:  93.82%; recall:  93.72%; FB1:  93.77
+           B-ADJP: precision:  75.82%; recall:  68.72%; FB1:  72.10  397
+           B-ADVP: precision:  82.48%; recall:  78.29%; FB1:  80.33  822
+          B-CONJP: precision:  41.67%; recall:  55.56%; FB1:  47.62  12
+           B-INTJ: precision: 100.00%; recall:  50.00%; FB1:  66.67  1
+            B-LST: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+             B-NP: precision:  95.28%; recall:  94.83%; FB1:  95.06  12363
+             B-PP: precision:  94.72%; recall:  96.99%; FB1:  95.84  4926
+            B-PRT: precision:  71.15%; recall:  69.81%; FB1:  70.48  104
+           B-SBAR: precision:  89.44%; recall:  74.39%; FB1:  81.22  445
+             B-VP: precision:  94.72%; recall:  94.01%; FB1:  94.36  4623
+           I-ADJP: precision:  70.20%; recall:  63.47%; FB1:  66.67  151
+           I-ADVP: precision:  58.62%; recall:  57.30%; FB1:  57.95  87
+          I-CONJP: precision:  58.82%; recall:  76.92%; FB1:  66.67  17
+            I-LST: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+             I-NP: precision:  94.49%; recall:  94.78%; FB1:  94.63  14419
+             I-PP: precision:  44.44%; recall:  58.33%; FB1:  50.45  63
+           I-SBAR: precision:  11.11%; recall:  50.00%; FB1:  18.18  18
+             I-VP: precision:  92.68%; recall:  94.75%; FB1:  93.70  2705
+

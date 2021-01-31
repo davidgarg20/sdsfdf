@@ -1,0 +1,14 @@
+#Result -------------------------
+Accuracy                 :  96.6574896273605
+Correctly tagged words   :  49854
+Incorrectly tagged words :  1724
+Total words              :  51578
+Total sentences          :  3466
+
+processed 51578 tokens with 8603 phrases; found: 8338 phrases; correct: 7183.
+accuracy:  96.66%; precision:  86.15%; recall:  83.49%; FB1:  84.80
+           B-MISC: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+            I-LOC: precision:  85.95%; recall:  84.15%; FB1:  85.04  2050
+           I-MISC: precision:  91.74%; recall:  70.25%; FB1:  79.57  968
+            I-ORG: precision:  83.22%; recall:  79.88%; FB1:  81.51  2008
+            I-PER: precision:  86.41%; recall:  90.89%; FB1:  88.59  3312

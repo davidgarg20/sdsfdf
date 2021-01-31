@@ -1,0 +1,19 @@
+#Result -------------------------
+Accuracy                 :  95.70466682145344
+Correctly tagged words   :  45342
+Incorrectly tagged words :  2035
+Total words              :  47377
+Total sentences          :  2012
+
+processed 47377 tokens with 23852 phrases; found: 24057 phrases; correct: 22232.
+accuracy:  95.70%; precision:  92.41%; recall:  93.21%; FB1:  92.81
+             ADJP: precision:  74.09%; recall:  69.86%; FB1:  71.92  413
+             ADVP: precision:  80.83%; recall:  80.83%; FB1:  80.83  866
+            CONJP: precision:  62.50%; recall:  55.56%; FB1:  58.82  8
+             INTJ: precision: 100.00%; recall:  50.00%; FB1:  66.67  1
+              LST: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+               NP: precision:  92.45%; recall:  93.45%; FB1:  92.95  12556
+               PP: precision:  96.55%; recall:  97.84%; FB1:  97.19  4875
+              PRT: precision:  81.63%; recall:  75.47%; FB1:  78.43  98
+             SBAR: precision:  87.88%; recall:  85.42%; FB1:  86.64  520
+               VP: precision:  92.54%; recall:  93.77%; FB1:  93.15  4720

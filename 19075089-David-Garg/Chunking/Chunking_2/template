@@ -1,0 +1,6 @@
+# Unigram
+U00:%x[0,0]
+U01:%x[0,1]
+
+# Bigram
+B
