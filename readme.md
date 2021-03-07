@@ -1,4 +1,10 @@
+```
 
+Name - David Garg
+Roll No. - 19075089
+CSE (BTECH)
+
+```
 
 # AI Lab Task 4
 
@@ -20,7 +26,7 @@ NER - The Folder that contains Named Entity Recognition files.
 
 Files:-
 
-Readme - A Readme File for my AI Lab Task 2
+Readme - A Readme File for my AI Lab Task 4
 
 
 ### Chunking Folder:-
@@ -32,7 +38,7 @@ BILSTM - Contains the code and model of chunking using BILSTM
 
 A RNN folder components as follows :-
 
-chunk_rnn_model.pb file :- The file that conatins model build after training data using BILSTM
+chunk_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
 
 Chunking_RNN.ipynb :- The python notebook conataining results and output using RNN.
 
@@ -94,15 +100,11 @@ The dataset is extracted from the provided CoNLL shared task 2000.
 
 RESULTS:-
 
-RNN:-
 
-Loss: 0.05606793239712715,
-Accuracy: 0.9818012714385986
-
-BILSTM:-
-
-Loss: 0.050343357026576996,
-Accuracy: 0.9845889806747437
+| METHOD | LOSS   | ACCURACY  |
+| :-----: | :-: | :-: |
+| RNN | 0.05606793239712715 | 0.9818012714385986 |
+| BILSTM| 0.050343357026576996| 0.9845889806747437 |
 
 
 ### POS
@@ -121,15 +123,11 @@ The dataset is extracted from the provided CoNLL shared task 2000.
 
 RESULTS:-
 
-RNN:-
 
-Loss: 0.19767414033412933,
-Accuracy: 0.9499671459197998
-
-BILSTM:-
-
-Loss: 0.02280944027006626,
-Accuracy: 0.9929704070091248
+| METHOD | LOSS   | ACCURACY  |
+| :-----: | :-: | :-: |
+| RNN | 0.19767414033412933 | 0.9499671459197998 |
+| BILSTM| 0.02280944027006626 | 0.9929704070091248 |
 
 
 ### NER
@@ -143,15 +141,10 @@ The dataset is extracted from the provided CoNLL NER shared task 2003.
 
 RESULTS:-
 
-RNN:-
-
-Loss: 0.08923179656267166,
-Accuracy: 0.9825273752212524
-
-BILSTM:-
-
-Loss: 0.019738825038075447,
-Accuracy: 0.9945396184921265
+| METHOD | LOSS   | ACCURACY  |
+| :-----: | :-: | :-: |
+| RNN | 0.0892317965626716 | 0.9825273752212524 |
+| BILSTM| 0.019738825038075447 | 0.9825273752212524 |
 
 
 ### RNN
@@ -172,6 +165,17 @@ Recurrent Neural Network is a generalization of feedforward neural network that 
 
 Long Short-Term Memory (LSTM) networks are a modified version of recurrent neural networks, which makes it easier to remember past data in memory. The vanishing gradient problem of RNN is resolved here. LSTM is well-suited to classify, process and predict time series given time lags of unknown duration. It trains the model by using back-propagation.
 
+## Conclusion
 
+```
+1. By using the neural network methods namely Recurrent Neural Network and Named Entity Recognition for chunking the main conlusion that I got is that bilstm gives better result compared to RNN as we can see this from the results we got as expected as LSTM is a modification of RNN with one of the removed abvantage of RNN of vanishing weights.
+ 
+2. By using this we get to know neural networks namely RNN and its optimizations are very useful for natural language processing tasks as they give nearly accurate results in significantly less time.
+
+```
 
 Hoping that I performed my Lab Task in the best way that I could .
+
+
+
+
