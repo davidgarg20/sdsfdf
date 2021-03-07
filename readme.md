@@ -32,12 +32,14 @@ BILSTM - Contains the code and model of chunking using BILSTM
 
 A RNN folder components as follows :-
 
-chunk_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
+chunk_rnn_model.pb file :- The file that conatins model build after training data using BILSTM
+
 Chunking_RNN.ipynb :- The python notebook conataining results and output using RNN.
 
 A BILSTM folder components as follows :-
 
 chunk_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
+
 Chunking_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
 
 
@@ -51,11 +53,13 @@ BILSTM - Contains the code and model of POS using BILSTM
 A RNN folder components as follows :-
 
 pos_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
+
 POS_RNN.ipynb :- The python notebook conataining results and output using RNN.
 
 A BILSTM folder components as follows :-
 
 pos_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
+
 POS_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
 
 
@@ -69,11 +73,13 @@ BILSTM - Contains the code and model of NER using BILSTM
 A RNN folder components as follows :-
 
 ner_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
+
 NER_RNN.ipynb :- The python notebook conataining results and output using RNN.
 
 A BILSTM folder components as follows :-
 
 ner_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
+
 NER_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
 
 
