@@ -98,7 +98,21 @@ In chunking I have tried five templates which are diffrent and anaysed the accur
 Dataset -
 The dataset is extracted from the provided CoNLL shared task 2000. 
 
-RESULTS:-
+##### Steps:-
+ ```
+Step 1: Import data and get x (words) and y (chunking tags) from that.
+Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
+Step 3: Make sure that each sequence of input and ouput are of same length
+Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
+Step 5: Split data into training , testing , validation sets
+Step 6: Implement RNN model using libraries and fit the model
+Step 7: Visualise using graphs and compile the model and get summary of model.
+Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
+Step 9: Visualise , compile and get summary of Bi Lstm Model.
+Step 10: Save the models we got.
+````
+
+##### RESULTS:-
 
 
 | METHOD | LOSS   | ACCURACY  |
@@ -120,8 +134,21 @@ It is a process of converting a sentence to forms – list of words, list of tup
 Data Set
 The dataset is extracted from the provided CoNLL shared task 2000. 
 
+##### Steps:-
+ ```
+Step 1: Import data and get x (words) and y (pos tags) from that.
+Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
+Step 3: Make sure that each sequence of input and ouput are of same length
+Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
+Step 5: Split data into training , testing , validation sets
+Step 6: Implement RNN model using libraries and fit the model
+Step 7: Visualise using graphs and compile the model and get summary of model.
+Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
+Step 9: Visualise , compile and get summary of Bi Lstm Model.
+Step 10: Save the models we got.
+````
 
-RESULTS:-
+##### RESULTS:-
 
 
 | METHOD | LOSS   | ACCURACY  |
@@ -139,7 +166,21 @@ Named entity recognition (NER) is a natural language processing (NLP) technique 
 Note –
 The dataset is extracted from the provided CoNLL NER shared task 2003. 
 
-RESULTS:-
+##### Steps:-
+ ```
+Step 1: Import data and get x (words) and y from that.
+Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
+Step 3: Make sure that each sequence of input and ouput are of same length
+Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
+Step 5: Split data into training , testing , validation sets
+Step 6: Implement RNN model using libraries and fit the model
+Step 7: Visualise using graphs and compile the model and get summary of model.
+Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
+Step 9: Visualise , compile and get summary of Bi Lstm Model.
+Step 10: Save the models we got.
+````
+
+##### RESULTS:-
 
 | METHOD | LOSS   | ACCURACY  |
 | :-----: | :-: | :-: |
