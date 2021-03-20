@@ -13,7 +13,7 @@ CSE (BTECH)
 
 
 ### Morphological Analysis
-.
+
 Morphological Analysis study of word formation – how words are built up from smaller pieces. • Identification, analysis, and description of the structure of a given language's MORPHEMES and other linguistic units, such as root words, affixes, parts of speech, intonations and stresses, or implied context. Morphological Analysis is the process of determining the morphemes from which a given word is constructed.
 For doing Morphological Analysis I used a multi-task learning CNN-RNN model combined together with the potential of task-optimized phonetic features to predict the Lemma, POS category, Gender, Number, Person, Case, and Tense-aspect-mood (TAM) of Hindi word
 
@@ -73,20 +73,32 @@ Urdu.iypnb - This is the python notebook containing the step the I performed.
   ## Result
   
    #### Hindi Result for All Features : -
-   Average precision score, micro-averaged over all classes: 0.04460726393741833
-   Average precision score, micro-averaged over all classes: 0.20988512556490657
-   Average precision score, micro-averaged over all classes: 0.1732157497786222
-   Average precision score, micro-averaged over all classes: 0.08662825608711429
-   Average precision score, micro-averaged over all classes: 0.14176995763361663
-   Average precision score, micro-averaged over all classes: 0.6255491012325229
+   
+   Feature 1: Average precision score, micro-averaged over all classes: 0.04460726393741833
+   
+   Feature 2: Average precision score, micro-averaged over all classes: 0.20988512556490657
+   
+   Feature 3: Average precision score, micro-averaged over all classes: 0.1732157497786222
+   
+   Feature 4: Average precision score, micro-averaged over all classes: 0.08662825608711429
+   
+   Feature 5: Average precision score, micro-averaged over all classes: 0.14176995763361663
+   
+   Feature 6: Average precision score, micro-averaged over all classes: 0.6255491012325229
    
    #### Hindi Result for All Features : -
-   Average precision score, micro-averaged over all classes: 0.027397654184136627
-   Average precision score, micro-averaged over all classes: 0.05063749672768177
-   Average precision score, micro-averaged over all classes: 0.1527746699660005
-   Average precision score, micro-averaged over all classes: 0.0693994937806469
-   Average precision score, micro-averaged over all classes: 0.3611323022150249
-   Average precision score, micro-averaged over all classes: 0.32827995148386574
+   
+   Feature 1: Average precision score, micro-averaged over all classes: 0.027397654184136627
+   
+   Feature 2: Average precision score, micro-averaged over all classes: 0.05063749672768177
+   
+   Feature 3: Average precision score, micro-averaged over all classes: 0.1527746699660005
+   
+   Feature 4: Average precision score, micro-averaged over all classes: 0.0693994937806469
+   
+   Feature 5: Average precision score, micro-averaged over all classes: 0.3611323022150249
+   
+   Feature 6: Average precision score, micro-averaged over all classes: 0.32827995148386574
 
 
 
