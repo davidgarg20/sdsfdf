@@ -6,217 +6,93 @@ CSE (BTECH)
 
 ```
 
-# AI Lab Task 4
+# AI Lab Task 5
 
 
-## Named Entity Recognition , Part of Speech Tagging And Chunking Using RNN and Bidirectional LSTM
+## Isolated Word Morphological Analysis
+
+
+### Morphological Analysis
+.
+Morphological Analysis study of word formation – how words are built up from smaller pieces. • Identification, analysis, and description of the structure of a given language's MORPHEMES and other linguistic units, such as root words, affixes, parts of speech, intonations and stresses, or implied context. Morphological Analysis is the process of determining the morphemes from which a given word is constructed.
+For doing Morphological Analysis I used a multi-task learning CNN-RNN model combined together with the potential of task-optimized phonetic features to predict the Lemma, POS category, Gender, Number, Person, Case, and Tense-aspect-mood (TAM) of Hindi word
 
 
 ### Folder Structure
-
-
 
 Main Folder consists of following folders and files :-
 
 Folders:-
 
-Chunking - The Folder that contains chunking files.
-POS - The Folder that contains POS files.
-NER - The Folder that contains Named Entity Recognition files.
+HINDI - The Folder that contains HINDI Language Morphological Analysis files.
+URDU - The Folder that contains URDU Language Morphological Analysis files.
 
 Files:-
 
-Readme - A Readme File for my AI Lab Task 4
+Readme - A Readme File for my AI Lab Task 5
 
 
-### Chunking Folder:-
+### HINDI Folder:-
 
-Consists of following sub-folders :-
+Consists of following things :-
 
-RNN - Contains the code and model of chunking using RNN
-BILSTM - Contains the code and model of chunking using BILSTM
+Graph_Outputs - In this output folder there are graph output files as feature_0(POS_curve), feature_1(gender_curve), feature_2(number_curve), feature_3(person_cuve),feature_4(case_curve), feature_5(tense-aspect-mood (TAM_curve)).
 
-A RNN folder components as follows :-
+model_with_phonetic_hindi.hdf5 - This is our model file having the model weights.
 
-chunk_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
+Hindi.iypnb - This is the python notebook containing the step the I performed.
 
-Chunking_RNN.ipynb :- The python notebook conataining results and output using RNN.
 
-A BILSTM folder components as follows :-
+### URDU Folder:-
 
-chunk_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
+Consists of following things :-
 
-Chunking_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
+Graph_Outputs - In this output folder there are graph output files as feature_0(POS_curve), feature_1(gender_curve), feature_2(number_curve), feature_3(person_cuve),feature_4(case_curve), feature_5(tense-aspect-mood (TAM_curve)).
 
+model_with_phonetic_urdu.hdf5 - This is our model file having the model weights.
 
-### POS Folder:-
+Urdu.iypnb - This is the python notebook containing the step the I performed.
 
-Consists of following sub-folders :-
 
-RNN - Contains the code and model of POS using RNN
-BILSTM - Contains the code and model of POS using BILSTM
+## Packages and Dataset :
 
-A RNN folder components as follows :-
+	
+ Packages that were used are h5py, numpy, Keras, tensorflow, Keras-Applications, Keras-Preprocessing, PyYAML, matplotlib, scikit-learn
+ I used the data which can be extracted from: http://ltrc.iiit.ac.in/hutb_release/
 
-pos_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
 
-POS_RNN.ipynb :- The python notebook conataining results and output using RNN.
+## Procedure: 
 
-A BILSTM folder components as follows :-
+  1. First step is always dataset step. I first downloaded the dataset of Hindi and Urdu Language from the link which was mentioned earlier.
+  2. After that I trained the model using convolutional neural network and recurrent neural networks model combined together(CNN-RNN model).
+  3. This generated a model_weights model file which was used in next steps.
+  4. Then I tested the model on some data which I had already had for testing.
+  5. Then I used the model for prediction by using some model data. The model predicted  Lemma, POS category, Gender, Number, Person, Case, and Tense-aspect-mood (TAM).
+  Note:- I am not mentioning the commands as commands are explained better in python Notebook.
+  
+  ## Result
+  
+   #### Hindi Result for All Features : -
+   Average precision score, micro-averaged over all classes: 0.04460726393741833
+   Average precision score, micro-averaged over all classes: 0.20988512556490657
+   Average precision score, micro-averaged over all classes: 0.1732157497786222
+   Average precision score, micro-averaged over all classes: 0.08662825608711429
+   Average precision score, micro-averaged over all classes: 0.14176995763361663
+   Average precision score, micro-averaged over all classes: 0.6255491012325229
+   
+   #### Hindi Result for All Features : -
+   Average precision score, micro-averaged over all classes: 0.027397654184136627
+   Average precision score, micro-averaged over all classes: 0.05063749672768177
+   Average precision score, micro-averaged over all classes: 0.1527746699660005
+   Average precision score, micro-averaged over all classes: 0.0693994937806469
+   Average precision score, micro-averaged over all classes: 0.3611323022150249
+   Average precision score, micro-averaged over all classes: 0.32827995148386574
 
-pos_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
 
-POS_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
 
-
-### NER Folder:-
-
-Consists of following sub-folders :-
-
-RNN - Contains the code and model of NER using RNN
-BILSTM - Contains the code and model of NER using BILSTM
-
-A RNN folder components as follows :-
-
-ner_rnn_model.pb file :- The file that conatins model build after training data using BILSTM.
-
-NER_RNN.ipynb :- The python notebook conataining results and output using RNN.
-
-A BILSTM folder components as follows :-
-
-ner_bilstm_model.pb file :- The file that conatins model build after training data using BILSTM.
-
-NER_BILSTM.ipynb :- The python notebook conataining results and output using BILSTM.
-
-
-### Chunking
-
-Now I going to discuss about the chunking :-
-
-Chunking is a process of extracting phrases from unstructured text. Chunking works on top of POS tagging, it uses POS-tags as input and provides chunks as output. Chunking is very important when you want to extract information from text.
-In chunking I have tried five templates which are diffrent and anaysed the accuracy that I got on these templates.
-Dataset -
-The dataset is extracted from the provided CoNLL shared task 2000. 
-
-##### Steps:-
- ```
-Step 1: Import data and get x (words) and y (chunking tags) from that.
-Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
-Step 3: Make sure that each sequence of input and ouput are of same length
-Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
-Step 5: Split data into training , testing , validation sets
-Step 6: Implement RNN model using libraries and fit the model
-Step 7: Visualise using graphs and compile the model and get summary of model.
-Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
-Step 9: Visualise , compile and get summary of Bi Lstm Model.
-Step 10: Save the models we got.
-````
-
-##### RESULTS:-
-
-
-| METHOD | LOSS   | ACCURACY  |
-| :-----: | :-: | :-: |
-| RNN | 0.05606793239712715 | 0.9818012714385986 |
-| BILSTM| 0.050343357026576996| 0.9845889806747437 |
-
-
-### POS
-
-Now I going to discuss about the POS :-
-
-######
-
-Part of Speech tagging.
-
-######
-It is a process of converting a sentence to forms – list of words, list of tuples (where each tuple is having a form (word, tag)). The tag in case of is a part-of-speech tag, and signifies whether the word is a noun, adjective, verb, and so on.
-Data Set
-The dataset is extracted from the provided CoNLL shared task 2000. 
-
-##### Steps:-
- ```
-Step 1: Import data and get x (words) and y (pos tags) from that.
-Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
-Step 3: Make sure that each sequence of input and ouput are of same length
-Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
-Step 5: Split data into training , testing , validation sets
-Step 6: Implement RNN model using libraries and fit the model
-Step 7: Visualise using graphs and compile the model and get summary of model.
-Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
-Step 9: Visualise , compile and get summary of Bi Lstm Model.
-Step 10: Save the models we got.
-````
-
-##### RESULTS:-
-
-
-| METHOD | LOSS   | ACCURACY  |
-| :-----: | :-: | :-: |
-| RNN | 0.19767414033412933 | 0.9499671459197998 |
-| BILSTM| 0.02280944027006626 | 0.9929704070091248 |
-
-
-### NER
-
-Now I going to discuss about the NER :-
-
-Named Entity Recognition.
-Named entity recognition (NER) is a natural language processing (NLP) technique that automatically identifies named entities in a text and classifies them into predefined categories. Entities can be names of people, organizations, locations, times, quantities, monetary values, percentages, and more.I have used the test and train data for english and spanish language. 
-Note –
-The dataset is extracted from the provided CoNLL NER shared task 2003. 
-
-##### Steps:-
- ```
-Step 1: Import data and get x (words) and y from that.
-Step 2: Then vectorize X and Y using tokenizer function from keras library as neural networks take only numbers as input.
-Step 3: Make sure that each sequence of input and ouput are of same length
-Step 4: Pad the sequence and then implement word embeddings and then do one hot encoding for output sequences(Y)
-Step 5: Split data into training , testing , validation sets
-Step 6: Implement RNN model using libraries and fit the model
-Step 7: Visualise using graphs and compile the model and get summary of model.
-Step 8: Implement the Bi Lstm model, fit the model to embeddings created. 
-Step 9: Visualise , compile and get summary of Bi Lstm Model.
-Step 10: Save the models we got.
-````
-
-##### RESULTS:-
-
-| METHOD | LOSS   | ACCURACY  |
-| :-----: | :-: | :-: |
-| RNN | 0.0892317965626716 | 0.9825273752212524 |
-| BILSTM| 0.019738825038075447 | 0.9825273752212524 |
-
-
-### RNN
-
-Recurrent Neural Network is a generalization of feedforward neural network that has an internal memory. RNN is recurrent in nature as it performs the same function for every input of data while the output of the current input depends on the past one computation. After producing the output, it is copied and sent back into the recurrent network. For making a decision, it considers the current input and the output that it has learned from the previous input.
-
-##### Advantages of Recurrent Neural Network
-
-    RNN can model sequence of data so that each sample can be assumed to be dependent on previous ones
-    Recurrent neural network are even used with convolutional layers to extend the effective pixel neighbourhood.
-
-##### Disadvantages of Recurrent Neural Network
-
-    Gradient vanishing and exploding problems.
-    Training an RNN is a very difficult task.
-    
-### LSTM
-
-Long Short-Term Memory (LSTM) networks are a modified version of recurrent neural networks, which makes it easier to remember past data in memory. The vanishing gradient problem of RNN is resolved here. LSTM is well-suited to classify, process and predict time series given time lags of unknown duration. It trains the model by using back-propagation.
-
-## Conclusion
-
-```
-1. By using the neural network methods namely Recurrent Neural Network and Named Entity Recognition for chunking the main conlusion that I got is that bilstm gives better result compared to RNN as we can see this from the results we got as expected as LSTM is a modification of RNN with one of the removed abvantage of RNN of vanishing weights.
- 
-2. By using this we get to know neural networks namely RNN and its optimizations are very useful for natural language processing tasks as they give nearly accurate results in significantly less time.
-
-```
-
-Hoping that I performed my Lab Task in the best way that I could .
-
-
-
-
+  
+  ## Motivation
+  
+  Now the question arises what was my motivation to do this I wanted to explore Neuro-Linguistic Programming(NLP) and I got to know that Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme. So I searched some ways to do that I found this CNN-RNN way best . So I did this . I learned a lot from this
+  
+  
