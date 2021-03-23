@@ -110,3 +110,6 @@ BENGALI.iypnb - This is the python notebook containing the step the I performed.
    
   
  The graphs of loss and accuracy are shown in python notebook.
+ 
+ 
+ 
