@@ -6,16 +6,16 @@ CSE (BTECH)
 
 ```
 
-# AI Lab Task 5
+# AI Lab Task 6
 
 
-## Isolated Word Morphological Analysis
+## Isolated Word Morphological Generation
 
 
 ### Morphological Analysis
 
-Morphological Analysis study of word formation – how words are built up from smaller pieces. • Identification, analysis, and description of the structure of a given language's MORPHEMES and other linguistic units, such as root words, affixes, parts of speech, intonations and stresses, or implied context. Morphological Analysis is the process of determining the morphemes from which a given word is constructed.
-For doing Morphological Analysis I used a multi-task learning CNN-RNN model combined together with the potential of task-optimized phonetic features to predict the Lemma, POS category, Gender, Number, Person, Case, and Tense-aspect-mood (TAM) of Hindi word
+The smallest meaningful word in a sentence or a phrase in any language is known as morpheme. In well-spaced sentences , Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme.
+Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice , aspect , person , gender , number etc.. 
 
 
 ### Folder Structure
@@ -24,50 +24,74 @@ Main Folder consists of following folders and files :-
 
 Folders:-
 
-HINDI - The Folder that contains HINDI Language Morphological Analysis files.
-URDU - The Folder that contains URDU Language Morphological Analysis files.
+HINDI - The Folder that contains HINDI Language Isolated Word Morphological Generation files.
+GERMAN - The Folder that contains GERMAN Language Isolated Word Morphological Generation files.
+MIDDLE-HIGH-GERMAN - The Folder that contains MIDDLE-HIGH-GERMAN Language Isolated Word Morphological Generation files.
+BENGALI - The Folder that contains BENGALI Language Isolated Word Morphological Generation files.
 
 Files:-
 
-Readme - A Readme File for my AI Lab Task 5
+Readme - A Readme File for my AI Lab Task 6
 
 
 ### HINDI Folder:-
 
 Consists of following things :-
 
-Graph_Outputs - In this output folder there are graph output files as feature_0(POS_curve), feature_1(gender_curve), feature_2(number_curve), feature_3(person_cuve),feature_4(case_curve), feature_5(tense-aspect-mood (TAM_curve)).
+decoder.dict - This is encoder file for HINDI Isolated Word Morphological Generation
 
-model_with_phonetic_hindi.hdf5 - This is our model file having the model weights.
+encoder.dict - This is decoder file for HINDI Isolated Word Morphological Generation
 
-Hindi.iypnb - This is the python notebook containing the step the I performed.
+HINDI.iypnb - This is the python notebook containing the step the I performed.
 
 
-### URDU Folder:-
+### GERMAN Folder:-
 
 Consists of following things :-
 
-Graph_Outputs - In this output folder there are graph output files as feature_0(POS_curve), feature_1(gender_curve), feature_2(number_curve), feature_3(person_cuve),feature_4(case_curve), feature_5(tense-aspect-mood (TAM_curve)).
+decoder.dict - This is encoder file for GERMAN Isolated Word Morphological Generation
 
-model_with_phonetic_urdu.hdf5 - This is our model file having the model weights.
+encoder.dict - This is decoder file for GERMAN Isolated Word Morphological Generation
 
-Urdu.iypnb - This is the python notebook containing the step the I performed.
+GERMAN.iypnb - This is the python notebook containing the step the I performed.
+
+
+### MIDDLE-HIGH-GERMAN Folder:-
+
+Consists of following things :-
+
+decoder.dict - This is encoder file for MIDDLE-HIGH-GERMAN Isolated Word Morphological Generation
+
+encoder.dict - This is decoder file for MIDDLE-HIGH-GERMAN Isolated Word Morphological Generation
+
+MIDDLE-HIGH-GERMAN.iypnb - This is the python notebook containing the step the I performed.
+
+
+### BENGALI Folder:-
+
+Consists of following things :-
+
+decoder.dict - This is encoder file for BENGALI Isolated Word Morphological Generation
+
+encoder.dict - This is decoder file for BENGALI Isolated Word Morphological Generation
+
+BENGALI.iypnb - This is the python notebook containing the step the I performed.
 
 
 ## Packages and Dataset :
 
 	
- Packages that were used are h5py, numpy, Keras, tensorflow, Keras-Applications, Keras-Preprocessing, PyYAML, matplotlib, scikit-learn
- I used the data which can be extracted from: http://ltrc.iiit.ac.in/hutb_release/
+ Packages that were used are - pytorch , pandas , matplotlib ,high resource hindi and german dataset, low resource middle-high-german and bengali dataset , Numpy ,random
+ I used the data which can be extracted from: https://unimorph.github.io/
 
 
 ## Procedure: 
 
-  1. First step is always dataset step. I first downloaded the dataset of Hindi and Urdu Language from the link which was mentioned earlier.
-  2. After that I trained the model using convolutional neural network and recurrent neural networks model combined together(CNN-RNN model).
-  3. This generated a model_weights model file which was used in next steps.
-  4. Then I tested the model on some data which I had already had for testing.
-  5. Then I used the model for prediction by using some model data. The model predicted  Lemma, POS category, Gender, Number, Person, Case, and Tense-aspect-mood (TAM).
+  1. First step is always dataset step. I first downloaded the all dataset Language from the link which was mentioned earlier.
+  2. After that I trained the model using ml model using pytorch.
+  3. This generated a encoder and decoder file which was used in next steps.
+  4. Then I tested the model on some test data which I had already had for testing.
+  5. Then I used the model for prediction by using some model data. The model predicted  the word.
   Note:- I am not mentioning the commands as commands are explained better in python Notebook.
   
   ## Result
