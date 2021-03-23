@@ -17,6 +17,10 @@ CSE (BTECH)
 The smallest meaningful word in a sentence or a phrase in any language is known as morpheme. In well-spaced sentences , Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme.
 Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice , aspect , person , gender , number etc.. 
 
+## About Task
+
+The task is that:- given a lemma and a bundle of morphological features, generate a target inflected form.In this task we are using 4 languages Hindi, German, Bengali, Middle-High-German .
+
 
 ### Folder Structure
 
@@ -91,23 +95,18 @@ BENGALI.iypnb - This is the python notebook containing the step the I performed.
 ## Procedure: 
 
   1. First step is always dataset step. I first downloaded the all dataset Language from the link which was mentioned earlier.
-  2. After that I trained the model using ml model using pytorch.
+  2. After that I trained the  encoder-decoder model modified by a custom trainer that trains only with the target language resources after aspecific threshold..
   3. This generated a encoder and decoder file which was used in next steps.
   4. Then I tested the model on some test data which I had already had for testing.
   5. Then I used the model for prediction by using some model data. The model predicted  the word.
   Note:- I am not mentioning the commands as commands are explained better in python Notebook.
   
-  ## Result
   
-
+  ## Result
   
 | Language | HINDI | MIDDLE-HIGH-GERMAN | GERMAN | BENGALI |
 | :---: | :---: | :---: | :---: |:---: |
 |Accuracy| 0.7130021796740597 | 0.5651269731056964 | 0.8614476061811625 | 0.7214294160507926 |
    
   
-  ## Motivation
-  
-  Now the question arises what was my motivation to do this I wanted to explore Neuro-Linguistic Programming(NLP) and I got to know that Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme. So I searched some ways to do that I found this CNN-RNN way best . So I did this . I learned a lot from this
-  
-  
+ The graphs of loss and accuracy are shown in python notebook.
