@@ -25,8 +25,11 @@ Main Folder consists of following folders and files :-
 Folders:-
 
 HINDI - The Folder that contains HINDI Language Isolated Word Morphological Generation files.
+
 GERMAN - The Folder that contains GERMAN Language Isolated Word Morphological Generation files.
+
 MIDDLE-HIGH-GERMAN - The Folder that contains MIDDLE-HIGH-GERMAN Language Isolated Word Morphological Generation files.
+
 BENGALI - The Folder that contains BENGALI Language Isolated Word Morphological Generation files.
 
 Files:-
@@ -96,36 +99,12 @@ BENGALI.iypnb - This is the python notebook containing the step the I performed.
   
   ## Result
   
-   #### Hindi Result for All Features : -
-   
-   Feature 1: Average precision score, micro-averaged over all classes: 0.04460726393741833
-   
-   Feature 2: Average precision score, micro-averaged over all classes: 0.20988512556490657
-   
-   Feature 3: Average precision score, micro-averaged over all classes: 0.1732157497786222
-   
-   Feature 4: Average precision score, micro-averaged over all classes: 0.08662825608711429
-   
-   Feature 5: Average precision score, micro-averaged over all classes: 0.14176995763361663
-   
-   Feature 6: Average precision score, micro-averaged over all classes: 0.6255491012325229
-   
-   #### Hindi Result for All Features : -
-   
-   Feature 1: Average precision score, micro-averaged over all classes: 0.027397654184136627
-   
-   Feature 2: Average precision score, micro-averaged over all classes: 0.05063749672768177
-   
-   Feature 3: Average precision score, micro-averaged over all classes: 0.1527746699660005
-   
-   Feature 4: Average precision score, micro-averaged over all classes: 0.0693994937806469
-   
-   Feature 5: Average precision score, micro-averaged over all classes: 0.3611323022150249
-   
-   Feature 6: Average precision score, micro-averaged over all classes: 0.32827995148386574
 
-
-
+  
+| Language | HINDI | MIDDLE-HIGH-GERMAN | GERMAN | BENGALI |
+| :---: | :---: | :---: | :---: |:---: |
+|Accuracy| 0.7130021796740597 | 0.5651269731056964 | 0.8614476061811625 | 0.7214294160507926 |
+   
   
   ## Motivation
   
