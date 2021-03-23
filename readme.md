@@ -12,7 +12,7 @@ CSE (BTECH)
 ## Isolated Word Morphological Generation
 
 
-### Morphological Analysis
+### Morphological Generation
 
 The smallest meaningful word in a sentence or a phrase in any language is known as morpheme. In well-spaced sentences , Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme.
 Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice , aspect , person , gender , number etc.. 
