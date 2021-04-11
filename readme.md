@@ -75,7 +75,7 @@ FastText.iypnb - This is the python notebook containing the step the I performed
   7. Then I done the embedding mapping using vecmap library.
   8. Then I tested the bilungual model build.
 
-### Word2Vec
+### FastText
   1.  I first downloaded the Fastext model  .
   2. Then I unzipped the FastText.
   3. Then Dowloaded testing data for testing our bilingual model.
@@ -103,7 +103,7 @@ FastText.iypnb - This is the python notebook containing the step the I performed
   
 
 ### Conclusion :
-
+This lab task was addressed to the extraction of bilingual dictionaries from comparable corpora. 
 Word2Vec embeddings was less efficient from Fasttext embeddings which may due to the reason we have taken leass data for training the data of word2vec whereas fastext model was prebuild.
 
 
