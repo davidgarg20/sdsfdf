@@ -6,10 +6,10 @@ CSE (BTECH)
 
 ```
 
-# AI Lab Task 6
+# AI Lab Task 7
 
 
-## Isolated Word Morphological Generation
+##  Bilingual Dictionary Induction from Comparable Corpora
 
 
 ### Morphological Generation
