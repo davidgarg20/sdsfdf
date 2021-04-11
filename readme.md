@@ -12,14 +12,13 @@ CSE (BTECH)
 ##  Bilingual Dictionary Induction from Comparable Corpora
 
 
-### Morphological Generation
+### Bilingual Dictionary
 
-The smallest meaningful word in a sentence or a phrase in any language is known as morpheme. In well-spaced sentences , Morphological Analysis(MA) is the first step in Neuro-Linguistic Programming(NLP), in which a sentence is divided into a sequence of morphemes and then we determine parts of speech of the segmented morpheme.
-Morphological generation is just inverse of Morphological analysis. Morphlogical inflection Generation is the task of generating the inflected form of a given lemma corresponding to a particular lingusitic transformation. It is a mechnaism of word formation to express different grammatical categories such as tense, mood, voice , aspect , person , gender , number etc.. 
+А  bilinguаl  diсtiоnаry  оr  trаnslаtiоn  diсtiоnаry  is  а  sрeсiаlized  diсtiоnаry  used  tо  trаnslаte  wоrds  оr  рhrаses  frоm  оne  lаnguаge  tо  аnоther.  Bilinguаl  diсtiоnаries  саn  be  unidireсtiоnаl,  meаning  thаt  they  list  the  meаnings  оf  wоrds  оf  оne  lаnguаge  in  аnоther,  оr  саn  be  bidireсtiоnаl,  аllоwing  trаnslаtiоn  tо  аnd  frоm  bоth  lаnguаges.  Bidireсtiоnаl  bilinguаl  diсtiоnаries  usuаlly  соnsist  оf  twо  seсtiоns,  eасh  listing  wоrds  аnd  рhrаses  оf  оne  lаnguаge  аlрhаbetiсаlly  аlоng  with  their  trаnslаtiоn.In  соntrаst  tо  the  bilinguаl  diсtiоnаry,  а  mоnоlinguаl  diсtiоnаry  defines  wоrds  аnd  рhrаses  insteаd  оf  trаnslаting  them.
 
 ## About Task
 
-The task is that:- given a lemma and a bundle of morphological features, generate a target inflected form.In this task we are using 4 languages Hindi, German, Bengali, Middle-High-German .
+The task is Bilingual Dictionary Induction from Comparable Corpora. the task
 
 
 ### Folder Structure
@@ -28,61 +27,31 @@ Main Folder consists of following folders and files :-
 
 Folders:-
 
-HINDI - The Folder that contains HINDI Language Isolated Word Morphological Generation files.
+Word2Vec - The Folder that contains Word2Vec files.
 
-GERMAN - The Folder that contains GERMAN Language Isolated Word Morphological Generation files.
-
-MIDDLE-HIGH-GERMAN - The Folder that contains MIDDLE-HIGH-GERMAN Language Isolated Word Morphological Generation files.
-
-BENGALI - The Folder that contains BENGALI Language Isolated Word Morphological Generation files.
+FastText - The Folder that contains FastText files.
 
 Files:-
 
-Readme - A Readme File for my AI Lab Task 6
+Readme - A Readme File for my AI Lab Task 7
 
 
-### HINDI Folder:-
-
-Consists of following things :-
-
-decoder.dict - This is encoder file for HINDI Isolated Word Morphological Generation
-
-encoder.dict - This is decoder file for HINDI Isolated Word Morphological Generation
-
-HINDI.iypnb - This is the python notebook containing the step the I performed.
-
-
-### GERMAN Folder:-
+### Word2Vec Folder:-
 
 Consists of following things :-
 
-decoder.dict - This is encoder file for GERMAN Isolated Word Morphological Generation
+model_and_embedding.txt - The File contain links of all model and embedding files.
 
-encoder.dict - This is decoder file for GERMAN Isolated Word Morphological Generation
-
-GERMAN.iypnb - This is the python notebook containing the step the I performed.
+Word2Vec.iypnb - This is the python notebook containing the step the I performed.
 
 
-### MIDDLE-HIGH-GERMAN Folder:-
+### FastText Folder:-
 
 Consists of following things :-
 
-decoder.dict - This is encoder file for MIDDLE-HIGH-GERMAN Isolated Word Morphological Generation
+model_and_embedding.txt - The File contain links of all model and embedding files.
 
-encoder.dict - This is decoder file for MIDDLE-HIGH-GERMAN Isolated Word Morphological Generation
-
-MIDDLE-HIGH-GERMAN.iypnb - This is the python notebook containing the step the I performed.
-
-
-### BENGALI Folder:-
-
-Consists of following things :-
-
-decoder.dict - This is encoder file for BENGALI Isolated Word Morphological Generation
-
-encoder.dict - This is decoder file for BENGALI Isolated Word Morphological Generation
-
-BENGALI.iypnb - This is the python notebook containing the step the I performed.
+FastText.iypnb - This is the python notebook containing the step the I performed.
 
 
 ## Packages and Dataset :
@@ -104,12 +73,21 @@ BENGALI.iypnb - This is the python notebook containing the step the I performed.
   
   ## Result
   
-| Language | HINDI | MIDDLE-HIGH-GERMAN | GERMAN | BENGALI |
-| :---: | :---: | :---: | :---: |:---: |
-|Accuracy| 0.7130021796740597 | 0.5651269731056964 | 0.8614476061811625 | 0.7214294160507926 |
-   
+ ### Using FastText
   
- The graphs of loss and accuracy are shown in python notebook.
+| Result |English to German | German to English | 
+| :---: | :---: | :---: |
+|Accuracy| 63.99% | 62.17% | 
+|Coverage| 99.55% | 99.40% | 
+
+### Using Word2Vec
+   
+ | Result |English to German | German to English | 
+| :---: | :---: | :---: |
+|Accuracy| 45.81% | 43.22% | 
+|Coverage| 99.10% | 95.80% | 
+  
+
  
  
  
